@@ -1,0 +1,23 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<!-- it will contain all configuration files -->
+<web-app>
+  <display-name>Customer Details</display-name>
+  
+  <!-- Front Controller configuration-Dispatcher all the request will come to dispatcher servlet -->
+  
+  <servlet>
+  <servlet-name>brillio</servlet-name>
+  <!-- Central dispatcher for http request handlers and controllers -->
+  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>brillio</servlet-name>
+  <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 10 -17 ==>@WebServlet("/home) annotation based configuration-->
+</web-app>

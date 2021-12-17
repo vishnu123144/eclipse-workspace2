@@ -1,0 +1,10 @@
+server.port=8081
+
+spring.datasource.url=http://localhost:3306/brilliotech?createDatabaseIfNotExist=true
+spring.datasource.username=root
+spring.datasource.password=Vishnu@139
+
+spring.jpa.hibernate.ddl-auto=true
+spring.jpa.show-sql=true
+
+

@@ -1,0 +1,12 @@
+package com.brillio.springbootpractice.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name="product")
+public class Product {
+	
+	@Id
+	int id;
+
+}

@@ -1,0 +1,22 @@
+package com.brillio.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeSpring {
+	
+	@GetMapping("/")
+	public String getName()
+	{
+		return "Welcome to SpringBoot";
+	}
+	
+	@GetMapping("/home")
+	public String getHome()
+	{
+		return "Welcome to Homepage";
+	}
+
+}

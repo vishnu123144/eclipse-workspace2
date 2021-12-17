@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   
+    <bean id="departmentOne" class="com.brillio.springex3.model.Department">
+     <property name="departmentName" value="Testing"></property>
+   </bean>
+   
+   
+   <bean id="departmentTwo" class="com.brillio.springex3.model.Department">
+     <property name="departmentName" value="Human Resources"></property>
+   </bean>
+   
+   <bean id="employee" class="com.brillio.springex3.model.Employee" autowire="byName">
+     <property name="id" value="101"></property>
+       <property name="name" value="vishnu"></property>
+        <!--  <property name="departmentOne" ref="qa"></property>
+         <property name="departmentTwo" ref="hr"></property> -->
+   </bean>
+   
+   </beans>
